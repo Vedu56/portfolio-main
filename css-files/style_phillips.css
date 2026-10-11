@@ -1,0 +1,122 @@
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+       
+        h1 {
+            font-family: 'Audiowide', sans-serif;
+            font-size: 2rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-bottom: 2px solid #ffffff;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        nav {
+            margin-bottom: 2rem;
+        }
+        a {
+            color: #ffffff;
+            text-decoration: none;
+            border-bottom: 1px solid #ffffff;
+        }
+        a:hover {
+            background-color: #ffffff;
+            color: #000000;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 0.8rem;
+            background-color: #000000;
+            color: #ffffff;
+            border: 1px solid #ffffff;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1rem;
+            outline: none;
+        }
+        input:focus, textarea:focus {
+            background-color: #111111;
+            box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+        }
+        button {
+            background-color: #000000;
+            color: #ffffff;
+            border: 1px solid #ffffff;
+            font-family: 'Audiowide', sans-serif;
+            padding: 0.8rem 2rem;
+            font-size: 1rem;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: all 0.2s ease;
+        }
+        button:hover:not(:disabled) {
+            background-color: #ffffff;
+            color: #000000;
+        }
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .project-heading {
+            font-size: 28px;
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+        
+        .project-description {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #ffffff;
+            max-width: 800px;
+        }
+
+        #status-box {
+            display: none;
+            border: 1px solid #ffffff;
+            padding: 1.5rem;
+            margin-top: 1.5rem;
+            background-color: #000000;
+        }
+        .status-header {
+            font-family: 'Audiowide', sans-serif;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #000000;
+            color: #ffffff;
+            border: 1px solid #ffffff;
+            font-family: 'Audiowide', sans-serif;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #ffffff;
+    color: #000000;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>CONTACT PAGE</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css-files/style_contact.css">
+    
+</head>
+<body>
+
+    <div class="container">
+        <h1>SEND A MESSAGE</h1>
+        <nav>
+            <a href="index.html" class="btn">RETURN HOME</a>
+
+        </nav>
+
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">NAME</label>
+                <input type="text" id="name" name="name" placeholder="e.g. Vedant Trivedi" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">EMAIL ADDRESS</label>
+                <input type="email" id="email" name="email" placeholder="name@domain.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">MESSAGE</label>
+                <textarea id="message" name="message" rows="5" placeholder="Enter details..." required></textarea>
+            </div>
+
+            <button type="submit" id="submit-btn">SEND</button>
+        </form>
+
+        <div id="status-box"></div>
+    </div>
+
+    <script>
+        const form = document.getElementById('contact-form');
+        const submitBtn = document.getElementById('submit-btn');
+        const statusBox = document.getElementById('status-box');
+
+        
+        const ENDPOINT = "https://formsubmit.co/ajax/vedutrivedi49@gmail.com";
+
+        form.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            
+            submitBtn.disabled = true;
+            submitBtn.innerText = "SENDING...";
+            statusBox.style.display = "none";
+
+            const formData = new FormData(form);
+
+            try {
+                const response = await fetch(ENDPOINT, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    form.style.display = "none";
+                    statusBox.style.display = "block";
+                    statusBox.innerHTML = `
+                        <div class="status-header">MESSAGE SEND!</div>
+                        <p>Message was successful! Estimated response time.... 3 Hours</p>
+                        <p><a href="index.html">Return Home</a></p>
+                    `;
+                } else {
+                    throw new Error('Server returned non-200 status');
+                }
+            } catch (error) {
+                statusBox.style.display = "block";
+                statusBox.innerHTML = `
+                    <div class="status-header">Error</div>
+                    <p>Failed to send Message. Please check connection or email directly at vedutrivedi49@gmail.com</p>
+                `;
+                submitBtn.disabled = false;
+                submitBtn.innerText = "ERROR! RETRY";
+            }
+        });
+    </script>
+</body>
+</html>

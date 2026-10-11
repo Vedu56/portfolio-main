@@ -1,0 +1,60 @@
+* {
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+            border: 2px solid #ffffff;
+            padding: 3rem 2rem;
+            max-width: 600px;
+            width: 90%;
+            text-align: left;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+        }
+        h1 {
+            font-family: 'Audiowide', sans-serif;
+            font-size: 1.8rem;
+            margin-top: 0;
+            margin-bottom: 1rem;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #ffffff;
+            padding-bottom: 0.5rem;
+        }
+        .status-badge {
+            display: inline-block;
+            background-color: #ffffff;
+            color: #000000;
+            font-family: 'Audiowide', sans-serif;
+            padding: 0.2rem 0.6rem;
+            font-size: 0.8rem;
+            margin-bottom: 1.5rem;
+        }
+        p {
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #000000;
+            color: #ffffff;
+            border: 1px solid #ffffff;
+            font-family: 'Audiowide', sans-serif;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+        }
+        .btn:hover {
+            background-color: #ffffff;
+            color: #000000;
+        }

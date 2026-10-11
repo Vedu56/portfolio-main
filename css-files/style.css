@@ -1,0 +1,95 @@
+body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: "Audiowide", sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+      
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+       
+        header {
+            border-bottom: 2px solid #ffffff;
+            padding-bottom: 1rem;
+            margin-bottom: 3rem;
+        }
+        h1 {
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin: 0;
+        }
+        .subtitle {
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+
+     
+        .project {
+            border: 1px solid #ffffff;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            transition: all 0.3s ease;
+        }
+        
+        
+        .project:hover {
+            background-color: #ffffff;
+            color: #000000;
+            cursor: pointer;
+        }
+        
+        .project h2 {
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+        
+        .tech-stack {
+            font-size: 0.9rem;
+            border-top: 1px dashed currentColor;
+            padding-top: 0.5rem;
+            margin-top: 1rem;
+            text-transform: uppercase;
+        }
+        .project-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        
+        .card-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            margin-bottom: 2rem;
+        }
+        .project-card {
+            border: 1px solid #ffffff;
+            background-color: #000000;
+            padding: 1.5rem;
+            transition: background-color 0.2s ease, transform 0.2s ease;
+            cursor: pointer;
+        }
+        
+        .card-link:hover .project-card {
+            background-color: #ffffff;
+            color: #000000;
+            transform: translateY(-3px);
+        }
+        .tech-stack {
+            font-size: 0.85rem;
+            margin-top: 1rem;
+            opacity: 0.8;
+        }
+        .card-footer {
+            margin-top: 1.5rem;
+            font-family: 'Audiowide', sans-serif;
+            font-size: 0.9rem;
+        }
